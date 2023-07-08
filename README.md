@@ -7,9 +7,7 @@ This project showcases how to analyze the Digital Music Store Database. I have e
 This analysis will provide great insight to the stake holders to take right and effective decisions.
 
 **Database and Tools:**
-1. PostgreSQL (PgAdmin4)
-2. Microsoft Powerpoint
+1. PostgreSQL (PgAdmin4) for Querying
+2. Microsoft Excel for Visualization 
+3. Microsoft Powerpoint for Presentation
 
-**Schema- Music Store Database:**
-
-<img width="594" alt="schema_diagram" src="https://github.com/souptik-d/Portfolio_projects/assets/128696109/c1d7b65c-0cb7-4d13-9de4-f8059b666f7c">
