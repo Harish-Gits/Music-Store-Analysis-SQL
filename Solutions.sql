@@ -1,5 +1,3 @@
-EASY -->
-
 -- Q1: Who is the senior most employee based on job title?
 select * from employee
 order by levels desc
@@ -47,8 +45,6 @@ limit 1;
 
 
 
-MODERATE -->
-
 -- Q1: Write query to return the email, first name, last name, & Genre of all Rock Music listeners. 
 -- Return your list ordered alphabetically by email starting with A.
 select distinct c.email,c.first_name,c.last_name
@@ -82,8 +78,6 @@ where milliseconds > (select avg(milliseconds) from track)
 order by milliseconds desc;
 
 
-
-ADVANCE -->
 
 -- Q1: Find how much amount spent by each customer on artists? 
 -- Write a query to return customer name, artist name and total spent
