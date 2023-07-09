@@ -81,16 +81,17 @@ order by milliseconds desc;
 
 -- Q1: Find how much amount spent by each customer on artists? 
 -- Write a query to return customer name, artist name and total spent
-select c.first_name, c.last_name, arts.name, sum(il.unit_price * il.quantity) as total_spent
-from customer c
-join invoice i on c.customer_id = i.customer_id
-join invoice_line il on il.invoice_id = i.invoice_id
-join track t on t.track_id = il.track_id
-join album abm on abm.album_id = t.album_id
-join artist arts on arts.artist_id = abm.artist_id
-where c.first_name = 'Wyatt'
-group by c.first_name, c.last_name, arts.name;
-
+select a.name as artist_name,c.first_name as customer_first_name,
+c.last_name as customer_last_name,
+sum(il.unit_price*il.quantity) as total_spent 
+from invoice i 
+join invoice_line il on il.invoice_id=i.invoice_id
+join customer c on c.customer_id=i.customer_id
+join track t on t.track_id=il.track_id
+join album al on al.album_id=t.album_id
+join artist a on a.artist_id=al.artist_id
+group by 1,2,3
+order by 4 desc
 
 -- Q2. We want to find out the most popular music Genre for each country. 
 -- We determine the most popular genre as the genre 
