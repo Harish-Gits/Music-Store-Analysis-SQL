@@ -5,6 +5,6 @@ This project showcases how to analyze the Digital Music Store Database. I have e
 This analysis will provide great insight to the stake holders to take right and effective decisions.
 
 **Database and Tools:**
-1. PostgreSQL (PgAdmin4) for Querying
+  PostgreSQL (PgAdmin4)
 
 
