@@ -6,6 +6,5 @@ This analysis will provide great insight to the stake holders to take right and 
 
 **Database and Tools:**
 1. PostgreSQL (PgAdmin4) for Querying
-2. Microsoft Excel for Visualization 
-3. Microsoft Powerpoint for Presentation
+
 
